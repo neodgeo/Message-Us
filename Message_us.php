@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Message Us
- * @version 0.8
+ * @version 1
  */
 /*
 Plugin Name: Message Us
 Plugin URI: 
 Description: Send us a message on fb
 Author: Laurent MAXIMIN
-Version: 0.8
+Version: 1
 Author URI: http://maximin.etudiant-eemi.com 
 Text Domain: wp_messageus_op
 */
@@ -36,8 +36,12 @@ function wp_messageus_op_init() {
 add_action( 'plugins_loaded', 'wp_messageus_op_init' );
 
 function MessageUs() {
+	global $wpdb;
 	require_once OP_DIR . '/popup/popup_message_us.php';
-	echo "<div class='messageus'><a href='https://m.me/Neo.lrt.mxn'>contact moi sur fb</a></div>";
+	$dataPopup = $wpdb->get_results("SELECT option_value FROM wp_options WHERE option_name like 'wedevs_basics'");
+	
+
+	echo "<div class='infoPopup' style='display:none;'>".json_encode($dataPopup[0]->option_value)."</div>";
 }
 
 add_action('init', 'MessageUs');
