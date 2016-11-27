@@ -6,6 +6,7 @@
  * @author Tareq Hasan <tareq@weDevs.com>
  * @author Amaury Balmer <amaury@beapi.fr>
  * @author Julien Maury <jmaury@beapi.fr> (very few changes + WP 3.9 ++)
+ * @author Laurent Maximin <laurent.maximin@eemi.fr> (add color-picker box)
  * @link https://github.com/herewithme/wordpress-settings-api-class
  * @example settings-api.php How to use the class
  */
@@ -136,7 +137,6 @@ if ( !class_exists( 'WeDevs_Settings_API' ) ):
                         'options' => isset( $option['options'] ) ? $option['options'] : '',
                         'std' => isset( $option['default'] ) ? $option['default'] : '',
                         'sanitize_callback' => isset( $option['sanitize_callback'] ) ? $option['sanitize_callback'] : '',
-                        'class' => $option['class'],
                     );
 
                     if ( in_array($option['type'], array('metabox', 'html') ) ) {
@@ -172,7 +172,7 @@ if ( !class_exists( 'WeDevs_Settings_API' ) ):
          * @param array   $args settings field args
          */
         public function callback_text( $args ) {
-            $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ), $args['class'] );
+            $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ));
             $size  = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
             $colorfield = isset( $args['id'] ) && !(stristr($args['id'], 'color', false)) ? $args['id'] : 'color-field';
 

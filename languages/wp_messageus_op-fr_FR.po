@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp_messageus_op\n"
+"POT-Creation-Date: 2016-11-27 16:51+0100\n"
+"PO-Revision-Date: 2016-11-27 16:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: Laurent maximin <laurent.maximin@eemi.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/admin/procedural-example.php:23
+msgid "Settings"
+msgstr "Configuration"
+
+#: inc/admin/procedural-example.php:24
+msgid "Configure your plugin message us"
+msgstr "Configure ton plugin message us"
+
+#: inc/admin/procedural-example.php:25
+msgid "MessageUs"
+msgstr "Message Us"
+
+#: inc/admin/procedural-example.php:33
+msgid "User id"
+msgstr "Id de l'utilisateur"
+
+#: inc/admin/procedural-example.php:34
+msgid "You can find your user id in your facebook's settings"
+msgstr ""
+"Vous pouvez trouvez votre id d'utilisateur dans vos configuration facebook"
+
+#: inc/admin/procedural-example.php:41
+msgid "Title of your popup"
+msgstr "Titre de votre popup"
+
+#: inc/admin/procedural-example.php:42
+msgid "Choose a good title to focus your visitors on it"
+msgstr "Choisissez un bon titre pour attirer vos visiteurs"
+
+#: inc/admin/procedural-example.php:48
+msgid "HTML description"
+msgstr ""
+
+#: inc/admin/procedural-example.php:53
+msgid "Message"
+msgstr "Message"
+
+#: inc/admin/procedural-example.php:54
+msgid "Write here the reason why a visitor should send you a message"
+msgstr ""
+"Ecrivez ici la raison pour laquelle un visiteur devrait vous envoyez un "
+"message"
+
+#: inc/admin/procedural-example.php:59
+msgid "Background color"
+msgstr "Couleur de fond"
+
+#: inc/admin/procedural-example.php:60
+msgid "Choose your popup background color"
+msgstr "Choisissez la couleur de fond de votre popup"
+
+#: inc/admin/procedural-example.php:67
+msgid "Font color"
+msgstr "Couleur du texte"
+
+#: inc/admin/procedural-example.php:68
+msgid "Choose your font color"
+msgstr "Choisissez la couleur du texte"
+
+#: inc/admin/procedural-example.php:75
+msgid "Radio Button"
+msgstr ""
+
+#: inc/admin/procedural-example.php:76
+msgid "A radio button"
+msgstr ""
+
+#: inc/admin/procedural-example.php:85
+msgid "Multile checkbox"
+msgstr ""
+
+#: inc/admin/procedural-example.php:86
+msgid "Multi checkbox description"
+msgstr ""
+
+#: inc/admin/procedural-example.php:97
+msgid "A Dropdoxwn"
+msgstr ""
+
+#: inc/admin/procedural-example.php:98
+msgid "Dropdown xdescription"
+msgstr ""
+
+#: inc/admin/procedural-example.php:108
+msgid "Password"
+msgstr ""
+
+#: inc/admin/procedural-example.php:109
+msgid "Password description"
+msgstr ""
+
+#: inc/admin/procedural-example.php:115
+msgid "File"
+msgstr ""
+
+#: inc/admin/procedural-example.php:116
+msgid "File description"
+msgstr ""
+
+#: library/class.settings-api.php:349
+msgid "Browse"
+msgstr ""
+
+#: library/class.settings-api.php:502
+msgid "No section available"
+msgstr ""

@@ -20,94 +20,55 @@ if ( !function_exists( 'wedevs_admin_init' ) ):
         $sections = array(
             array(
                 'id' => 'wedevs_basics',
-                'title' => __( 'Configuration', 'wedevs' ),
-                'desc' => __( 'Entrez votre nom de user facebook (celui s\'affichant dans le racourci de votre page)', 'wedevs' ),
-                'tab_label' => __( 'MessageUs', 'wedevs' ),
+                'title' => __( 'Settings', 'wp_messageus_op' ),
+                'desc' => __( 'Configure your plugin message us', 'wp_messageus_op' ),
+                'tab_label' => __( 'MessageUs', 'wp_messageus_op' ),
             )
         );
 
         $fields = array(
             'wedevs_basics' => array(
                 array(
+                    'name' => 'user',
+                    'label' => __( 'User id', 'wp_messageus_op' ),
+                    'desc' => __( 'You can find your user id in your facebook\'s settings', 'wp_messageus_op' ),
+                    'desc_type' => 'inline',
+                    'type' => 'text',
+                    'default' => 'Neo.lrt.mxn'
+                ),
+                array(
                     'name' => 'title',
-                    'label' => __( 'Titre de la popup', 'wedevs' ),
-                    'desc' => __( 'Choisissez un titre pour capter l\'attention de vos visiteurs', 'wedevs' ),
+                    'label' => __( 'Title of your popup', 'wp_messageus_op' ),
+                    'desc' => __( 'Choose a good title to focus your visitors on it', 'wp_messageus_op' ),
                     'desc_type' => 'inline',
                     'type' => 'text',
                     'default' => 'Title'
                 ),
                 array(
-                    'desc' => __( 'HTML description', 'wedevs' ),
+                    'desc' => __( 'HTML description', 'wp_messageus_op' ),
                     'type' => 'html'
                 ),
                 array(
                     'name' => 'message',
-                    'label' => __( 'Message', 'wedevs' ),
-                    'desc' => __( 'Ecrivez ici la raison pour laquelle un visiteur pourrai vous contacter', 'wedevs' ),
+                    'label' => __( 'Message', 'wp_messageus_op' ),
+                    'desc' => __( 'Write here the reason why a visitor should send you a message', 'wp_messageus_op' ),
                     'type' => 'textarea'
                 ),
                 array(
                     'name' => 'color1',
-                    'label' => __( 'Couleur du fond', 'wedevs' ),
-                    'desc' => __( 'choisissez la couleur de fond', 'wedevs' ),
+                    'label' => __( 'Background color', 'wp_messageus_op' ),
+                    'desc' => __( 'Choose your popup background color', 'wp_messageus_op' ),
                     'desc_type' => 'inline',
                     'type' => 'text',
                     'default' => '#000000'
                 ),
                 array(
                     'name' => 'color2',
-                    'label' => __( 'Couleur du texte', 'wedevs' ),
-                    'desc' => __( 'choisissez la couleur du texte', 'wedevs' ),
+                    'label' => __( 'Font color', 'wp_messageus_op' ),
+                    'desc' => __( 'Choose your font color', 'wp_messageus_op' ),
                     'desc_type' => 'inline',
                     'type' => 'text',
                     'default' => '#ffffff'
-                ),
-                array(
-                    'name' => 'radio',
-                    'label' => __( 'Radio Button', 'wedevs' ),
-                    'desc' => __( 'A radio button', 'wedevs' ),
-                    'type' => 'radio',
-                    'options' => array(
-                        'yes' => 'Yes',
-                        'no' => 'No'
-                    )
-                ),
-                array(
-                    'name' => 'multicheck',
-                    'label' => __( 'Multile checkbox', 'wedevs' ),
-                    'desc' => __( 'Multi checkbox description', 'wedevs' ),
-                    'type' => 'multicheck',
-                    'options' => array(
-                        'one' => 'One',
-                        'two' => 'Two',
-                        'three' => 'Three',
-                        'four' => 'Four'
-                    )
-                ),
-                array(
-                    'name' => 'selectbox',
-                    'label' => __( 'A Dropdown', 'wedevs' ),
-                    'desc' => __( 'Dropdown description', 'wedevs' ),
-                    'type' => 'select',
-                    'default' => 'no',
-                    'options' => array(
-                        'yes' => 'Yes',
-                        'no' => 'No'
-                    )
-                ),
-                array(
-                    'name' => 'password',
-                    'label' => __( 'Password', 'wedevs' ),
-                    'desc' => __( 'Password description', 'wedevs' ),
-                    'type' => 'password',
-                    'default' => ''
-                ),
-                array(
-                    'name' => 'file',
-                    'label' => __( 'File', 'wedevs' ),
-                    'desc' => __( 'File description', 'wedevs' ),
-                    'type' => 'file',
-                    'default' => ''
                 ),
             )
         );
