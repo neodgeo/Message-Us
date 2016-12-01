@@ -4,7 +4,6 @@ jQuery(function($){
 	if($data !== null && $data !== undefined){
 		$data= JSON.parse($data);
 		$data = extractText($data);
-		console.log($data);
 		
 
 		
